@@ -1,0 +1,49 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C06E" />
+      <stop offset="50%" stop-color="#FEE9A0" />
+      <stop offset="100%" stop-color="#C39738" />
+    </linearGradient>
+    <filter id="softGlow" height="300%" width="300%" x="-100%" y="-100%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Main Circle -->
+  <circle cx="200" cy="150" r="120" fill="#1A1A1A" stroke="url(#goldGradient)" stroke-width="3" />
+  
+  <!-- Light Rays -->
+  <g opacity="0.7" filter="url(#softGlow)">
+    <path d="M200,150 L280,70" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M200,150 L320,150" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M200,150 L280,230" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M200,150 L200,270" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M200,150 L120,230" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M200,150 L80,150" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M200,150 L120,70" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M200,150 L200,30" stroke="url(#goldGradient)" stroke-width="2" />
+  </g>
+  
+  <!-- Lightbulb Icon -->
+  <g transform="translate(175, 118) scale(0.08)">
+    <path d="M319.5,512h-127c-8.284,0-15,6.716-15,15v30c0,41.355,33.645,75,75,75h7c41.355,0,75-33.645,75-75v-30
+    C334.5,518.716,327.784,512,319.5,512z" fill="url(#goldGradient)"/>
+    <path d="M256,0C161.393,0,85.667,75.726,85.667,170.333c0,64.698,26.716,112.549,57.956,151.217
+    c31.24,38.668,62.461,64.45,62.461,64.45c4.019,3.191,6.245,8.095,6.245,13.5V421c0,16.542,13.458,30,30,30h27.669
+    c16.542,0,30-13.458,30-30v-21.5c0-5.405,2.227-10.309,6.245-13.5c0,0,31.221-25.782,62.461-64.45
+    c31.24-38.668,57.956-86.518,57.956-151.217C426.333,75.726,350.607,0,256,0z" fill="url(#goldGradient)" opacity="0.9"/>
+  </g>
+  
+  <!-- Text: JAMES -->
+  <text x="200" y="210" font-family="Georgia, serif" font-size="32" font-weight="bold" text-anchor="middle" fill="url(#goldGradient)">JAMES</text>
+  
+  <!-- Text: LUXURY LIGHTS -->
+  <text x="200" y="240" font-family="Georgia, serif" font-size="18" letter-spacing="2" text-anchor="middle" fill="url(#goldGradient)">LUXURY LIGHTS</text>
+  
+  <!-- Decorative Elements -->
+  <path d="M130,210 L270,210" stroke="url(#goldGradient)" stroke-width="1" opacity="0.8" />
+  <circle cx="200" cy="150" r="40" fill="none" stroke="url(#goldGradient)" stroke-width="1" opacity="0.5" />
+</svg>

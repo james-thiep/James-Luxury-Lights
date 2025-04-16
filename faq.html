@@ -3,42 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find answers to common questions about James Luxury Lights products and services">
     <title>FAQ - James Luxury Lights</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">
+                <img src="images/logo.svg" alt="James Luxury Lights Logo">
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="categories.html">Categories</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories/interior-lighting.html">Interior Lighting</a></li>
+                        <li><a href="categories/exterior-lighting.html">Exterior Lighting</a></li>
+                        <li><a href="categories/commercial-lighting.html">Commercial Lighting</a></li>
+                        <li><a href="categories/custom-lighting.html">Custom Lighting</a></li>
+                    </ul>
+                </li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section class="faq">
-            <h1>Frequently Asked Questions</h1>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h2>What materials are used in your lights?</h2>
-                    <p>Our lights are crafted from high-quality materials such as crystal, brass, and glass.</p>
-                </div>
-                <div class="faq-item">
-                    <h2>Do you offer international shipping?</h2>
-                    <p>Yes, we offer international shipping to most countries.</p>
-                </div>
-                <!-- Add more FAQ items as needed -->
+        <!-- FAQ Hero Section -->
+        <section class="faq-hero">
+            <div class="hero-content">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about our luxury lighting products and services</p>
             </div>
         </section>
+
+        <!-- FAQ Search Section -->
+        <section class="faq-search">
+            <div class="search-container">
+                <input type="text" placeholder="Search for answers..." class="search-input" aria-label="Search FAQs">
+                <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <section class="faq-categories">
+            <div class="category-container">
+                <button class="category-btn active">All Questions</button>
+                <button class="category-btn">Products</button>
+                <button class="category-btn">Shipping</button>
+                <button class="category-btn">Installation</button>
+                <button class="category-btn">Warranty</button>
+                <button class="category-btn">Returns</button>
+            </div>
+        </section>
+
+        <!-- FAQ Content -->
+        <section class="faq-content">
+            <div class="faq-container">
+                <!-- Products Category -->
+                <div class="faq-category">
+                    <h2>Products</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What materials are used in your lights?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our lights are crafted from premium materials including crystal, brass, copper, glass, and high-quality metals. Each material is carefully selected for its durability and aesthetic appeal. We source our materials from reputable suppliers around the world to ensure the highest quality standards.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Are your lights energy efficient?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, all our lights are designed with energy efficiency in mind. We use LED technology and energy-saving components to ensure minimal power consumption while maintaining optimal lighting quality. Our LED bulbs typically use 75% less energy than traditional incandescent lighting, helping you save on electricity bills while reducing your carbon footprint.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer custom lighting solutions?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We specialize in creating custom lighting solutions tailored to your specific needs and design preferences. Our team of designers can work with you to create unique pieces that perfectly complement your space. Contact our customer service team to discuss your custom lighting requirements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shipping Category -->
+                <div class="faq-category">
+                    <h2>Shipping</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer international shipping?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer international shipping to most countries. Shipping costs and delivery times vary depending on the destination. Please contact us for specific shipping information to your location. For large or delicate items, we ensure special packaging to guarantee safe delivery.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does delivery take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Local deliveries within Kampala typically take 2-3 business days. For other locations in Uganda, delivery times range from 3-5 business days. For international orders, delivery times range from 5-14 business days depending on the destination and customs clearance. You'll receive a tracking number once your order is shipped.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How are fragile lighting products packaged for shipping?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We take extra care when packaging our lighting products, especially delicate items like crystal chandeliers. Each product is individually wrapped in protective materials such as foam, bubble wrap, and sturdy corrugated cardboard. For especially fragile items, we use custom-designed packaging to ensure they arrive in perfect condition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Installation Category -->
+                <div class="faq-category">
+                    <h2>Installation</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you provide installation services?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer professional installation services for all our lighting products. Our team of certified electricians ensures proper and safe installation according to local regulations. Installation services are available within Kampala and surrounding areas. For other locations, we can recommend trusted partners who can assist with installation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I install the lights myself?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While some of our products come with detailed installation instructions, we recommend professional installation for optimal performance and safety, especially for complex fixtures like chandeliers and recessed lighting. Our team is available to assist with any installation queries and can provide guidance if you choose to install the products yourself.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What's included in your installation service?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our installation service includes mounting the fixture, connecting the wiring, testing functionality, and cleaning up after installation. For complex installations, we also provide electrical load assessments to ensure your home's electrical system can support the new lighting. All installations are carried out according to national safety standards and include a post-installation inspection.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warranty Category -->
+                <div class="faq-category">
+                    <h2>Warranty</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What warranty do you offer on your products?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>All our products come with a standard 2-year warranty covering manufacturing defects and electrical components. Premium collections come with an extended 5-year warranty. LED light fixtures have a separate warranty specifically for the LED components, typically 3-5 years depending on the product line.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I claim warranty?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To claim warranty, please contact our customer service team with your order number and a description of the issue. You may need to provide photos or videos of the problem. If the product is covered under warranty, we'll arrange for repair, replacement, or refund at our discretion. For products installed by our team, we offer expedited warranty service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Returns Category -->
+                <div class="faq-category">
+                    <h2>Returns</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your return policy?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept returns within 30 days of delivery for most products in their original packaging and unused condition. Custom-made and special order items cannot be returned unless there is a manufacturing defect. Return shipping costs are the responsibility of the customer unless the return is due to our error or a defective product.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I initiate a return?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To initiate a return, please contact our customer service team within 30 days of receiving your order. You'll need to provide your order number and reason for return. Once approved, we'll send you return instructions and a return authorization number. Items must be carefully packaged in their original packaging to prevent damage during return shipping.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ CTA Section -->
+        <section class="faq-cta">
+            <div class="cta-content">
+                <h2>Still Have Questions?</h2>
+                <p>Our customer service team is here to help. Please don't hesitate to contact us if you have any questions or concerns.</p>
+                <a href="../contact.html" class="cta-button">Contact Us <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>&copy; 2025 James Luxury Lights</p>
+     <!-- Footer -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>James Luxury Lights is your premier destination for high-end lighting solutions, offering exceptional quality and design since 2014.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Street, Kampala</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@jamesluxurylights.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 James Luxury Lights. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Shipping Policy</a>
+            </div>
+        </div>
     </footer>
-    <script src="script.js"></script>
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Navigation
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (hamburger) {
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+    
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Toggle current item
+            item.classList.toggle('active');
+        });
+    });
+    
+    // Category Filter
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const faqCategories = document.querySelectorAll('.faq-category');
+    
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            categoryBtns.forEach(otherBtn => {
+                otherBtn.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            btn.classList.add('active');
+            
+            const category = btn.textContent.trim();
+            
+            // Show all categories if "All Questions" is clicked
+            if (category === 'All Questions') {
+                faqCategories.forEach(cat => {
+                    cat.style.display = 'block';
+                });
+            } else {
+                // Show only the selected category
+                faqCategories.forEach(cat => {
+                    const categoryTitle = cat.querySelector('h2').textContent.trim();
+                    if (categoryTitle === category) {
+                        cat.style.display = 'block';
+                    } else {
+                        cat.style.display = 'none';
+                    }
+                });
+            }
+        });
+    });
+    
+    // Search Functionality
+    const searchInput = document.querySelector('.search-input');
+    const searchBtn = document.querySelector('.search-btn');
+    
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        
+        if (searchTerm.length < 2) {
+            // Reset display if search term is too short
+            faqCategories.forEach(category => {
+                category.style.display = 'block';
+                
+                const items = category.querySelectorAll('.faq-item');
+                items.forEach(item => {
+                    item.style.display = 'block';
+                });
+            });
+            return;
+        }
+        
+        // Show all categories initially
+        faqCategories.forEach(category => {
+            category.style.display = 'block';
+        });
+        
+        // Search through all FAQ items
+        let hasResults = false;
+        
+        faqCategories.forEach(category => {
+            let categoryHasResults = false;
+            const items = category.querySelectorAll('.faq-item');
+            
+            items.forEach(item => {
+                const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                    categoryHasResults = true;
+                    hasResults = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Hide category if no results
+            if (!categoryHasResults) {
+                category.style.display = 'none';
+            }
+        });
+        
+        // Reset category buttons
+        categoryBtns.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Set "All Questions" as active
+        categoryBtns[0].classList.add('active');
+        
+        // Show message if no results
+        const noResultsMsg = document.querySelector('.no-results-message');
+        if (!hasResults) {
+            if (!noResultsMsg) {
+                const message = document.createElement('div');
+                message.className = 'no-results-message';
+                message.innerHTML = `
+                    <div style="text-align: center; padding: 40px 20px;">
+                        <i class="fas fa-search" style="font-size: 3rem; color: #ccc; margin-bottom: 20px;"></i>
+                        <h3>No results found</h3>
+                        <p>We couldn't find any matches for "${searchTerm}"</p>
+                        <button class="reset-search" style="margin-top: 20px; padding: 10px 20px; background-color: var(--primary-color); color: white; border: none; border-radius: 30px; cursor: pointer;">Clear Search</button>
+                    </div>
+                `;
+                document.querySelector('.faq-container').appendChild(message);
+                
+                // Add event listener to reset button
+                message.querySelector('.reset-search').addEventListener('click', () => {
+                    searchInput.value = '';
+                    performSearch();
+                });
+            }
+        } else if (noResultsMsg) {
+            noResultsMsg.remove();
+        }
+    }
+    
+    if (searchBtn) {
+        searchBtn.addEventListener('click', performSearch);
+    }
+    
+    if (searchInput) {
+        searchInput.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+            
+            // Auto-search after brief delay when typing
+            clearTimeout(searchInput.searchTimeout);
+            searchInput.searchTimeout = setTimeout(performSearch, 500);
+        });
+    }
+});
+    </script>
+    </body>
 </html>
+            

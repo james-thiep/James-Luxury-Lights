@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Luxury Lights - Home</title>
+    <meta name="description" content="James Luxury Lights - Premium lighting solutions for modern homes and businesses">
+    <title>James Luxury Lights - Premium Lighting Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>James Luxury Lights</h1>
+                <img src="images/logo.svg" alt="James Luxury Lights Logo">
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="categories.html">Categories</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories/interior-lighting.html">Interior Lighting</a></li>
+                        <li><a href="categories/exterior-lighting.html">Exterior Lighting</a></li>
+                        <li><a href="categories/commercial-lighting.html">Commercial Lighting</a></li>
+                        <li><a href="categories/custom-lighting.html">Custom Lighting</a></li>
+                    </ul>
+                </li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -31,53 +46,249 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Brighten Your World</h1>
-            <p>Discover the finest collection of luxury lights that blend elegance and innovation.</p>
-            <a href="products.html" class="cta-button">Shop Now</a>
+            <h1>Illuminate Your Space with Elegance</h1>
+            <p>Discover our premium collection of luxury lighting solutions that blend sophistication with modern design.</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="cta-button">Explore Collection</a>
+                <a href="contact.html" class="cta-button secondary">Book Consultation</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <h3>10+</h3>
+                <p>Years of Excellence</p>
+            </div>
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>1000+</h3>
+                <p>Successful Projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <h2>Explore Our Collections</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/chandelier light.jpg" alt="Chandeliers">
+                <div class="category-content">
+                    <h3>Chandeliers</h3>
+                    <p>Elegant centerpieces for grand spaces</p>
+                    <a href="categories.html#chandeliers" class="category-link">View Collection <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/pendant led light.jpg" alt="Pendant Lights">
+                <div class="category-content">
+                    <h3>Pendant Lights</h3>
+                    <p>Modern statement pieces for any room</p>
+                    <a href="categories.html#pendants" class="category-link">View Collection <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/ex floor lamp.jpg" alt="Floor Lamps">
+                <div class="category-content">
+                    <h3>Floor Lamps</h3>
+                    <p>Functional art for your living space</p>
+                    <a href="categories.html#floor-lamps" class="category-link">View Collection <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Featured Products Section -->
     <section class="featured-products">
-        <h2>Featured Products</h2>
+        <div class="section-header">
+            <h2>Featured Collections</h2>
+            <p>Discover our most sought-after lighting solutions</p>
+        </div>
         <div class="product-grid">
             <div class="product-card">
-                <img src="images/chandelier light.jpg" alt="Chandelier">
-                <h3>Modern Chandelier</h3>
-                <p>UGX 1,820,000</p>
-                <a href="products.html" class="product-button">View Details</a>
+                <div class="product-badge">Best Seller</div>
+                <img src="images/chandelier light.jpg" alt="Modern Chandelier">
+                <div class="product-card-content">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(24 reviews)</span>
+                    </div>
+                    <h3>Modern Chandelier</h3>
+                    <p>Elevate your space with our contemporary chandelier collection, featuring premium materials and innovative design.</p>
+                    <div class="product-meta">
+                        <p class="price">UGX 1,820,000</p>
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <a href="products.html" class="product-button">View Details</a>
+                </div>
             </div>
             <div class="product-card">
                 <img src="images/pendant led light.jpg" alt="Pendant Light">
-                <h3>Elegant Pendant Light</h3>
-                <p>UGX 1,090,000</p>
-                <a href="products.html" class="product-button">View Details</a>
+                <div class="product-card-content">
+                    <h3>Elegant Pendant Light</h3>
+                    <p>Add a touch of sophistication to any room</p>
+                    <p class="price">UGX 1,090,000</p>
+                    <a href="products.html" class="product-button">View Details</a>
+                </div>
             </div>
             <div class="product-card">
                 <img src="images/ex floor lamp.jpg" alt="Floor Lamp">
-                <h3>Luxury Floor Lamp</h3>
-                <p>UGX 1,490,000</p>
-                <a href="products.html" class="product-button">View Details</a>
+                <div class="product-card-content">
+                    <h3>Luxury Floor Lamp</h3>
+                    <p>Perfect blend of style and functionality</p>
+                    <p class="price">UGX 1,490,000</p>
+                    <a href="products.html" class="product-button">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <h2>Why Choose James Luxury Lights</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-medal"></i>
+                <h3>Premium Quality</h3>
+                <p>Our lights are crafted with the finest materials and undergo rigorous quality checks.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-truck"></i>
+                <h3>Free Delivery</h3>
+                <p>Enjoy free delivery on all orders above UGX 5,000,000 within Kampala.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Support</h3>
+                <p>Our customer service team is available round the clock to assist you.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Warranty</h3>
+                <p>All our products come with a 2-year warranty for your peace of mind.</p>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials">
-        <h2>What Our Customers Say</h2>
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Hear from our satisfied customers</p>
+        </div>
         <div class="testimonial-grid">
             <div class="testimonial-card">
-                <p>"The lights are absolutely stunning! They transformed my living room into a luxurious space."</p>
-                <h4>- Antie Bridget</h4>
+                <div class="testimonial-header">
+                    <img src="images/client1.jpg" alt="Antie Bridget" class="client-avatar">
+                    <div class="client-info">
+                        <h4>Antie Bridget</h4>
+                        <p class="client-title">Interior Designer</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"The lights are absolutely stunning! They transformed my living room into a luxurious space. The quality and service exceeded my expectations."</p>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
             <div class="testimonial-card">
-                <p>"Excellent quality and customer service. I highly recommend James Luxury Lights!"</p>
-                <h4>- Mr Austin</h4>
+                <div class="testimonial-header">
+                    <img src="images/client2.jpg" alt="Mr Austin" class="client-avatar">
+                    <div class="client-info">
+                        <h4>Mr Austin</h4>
+                        <p class="client-title">Business Owner</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Excellent quality and customer service. The team at James Luxury Lights helped me find the perfect lighting solution for my new office space."</p>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
             <div class="testimonial-card">
-                <p>"The perfect blend of style and functionality. I couldn't be happier with my purchase."</p>
-                <h4>- Umar Farug</h4>
+                <div class="testimonial-header">
+                    <img src="images/3.jpg" alt="Umar Farug" class="client-avatar">
+                    <div class="client-info">
+                        <h4>Umar Farug</h4>
+                        <p class="client-title">Architect</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"The perfect blend of style and functionality. I couldn't be happier with my purchase. The installation was seamless and the results are breathtaking."</p>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Latest Projects -->
+    <section class="latest-projects">
+        <h2>Our Latest Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/luxuryvilla.webp" alt="Project 1">
+                <div class="project-overlay">
+                    <h3>Luxury Villa Lighting</h3>
+                    <p>Complete lighting solution for a modern villa</p>
+                    <a href="gallery.html" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/ModernOfficeLighting.jpg" alt="Project 2">
+                <div class="project-overlay">
+                    <h3>Modern Office Lighting</h3>
+                    <p>Lighting solution for a modern office</p>
+                    <a href="gallery.html" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/LuxuryBedroomLighting.jpeg" alt="Project 3">
+                <div class="project-overlay">
+                    <h3>Luxury Bedroom Lighting</h3>
+                    <p>Lighting solution for a luxurious bedroom</p>
+                    <a href="gallery.html" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive offers and design inspiration</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
     </section>
 
@@ -85,30 +296,44 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
+                <h3>About Us</h3>
+                <p>James Luxury Lights is your premier destination for high-end lighting solutions, offering exceptional quality and design since 2014.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="footer-section">
-                <h3>Newsletter</h3>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit">Subscribe</button>
-                </form>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Street, Kampala</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@jamesluxurylights.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 6:00 PM</li>
+                </ul>
             </div>
         </div>
-        <p>&copy; 2025 James Luxury Lights. All rights reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 James Luxury Lights. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Shipping Policy</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

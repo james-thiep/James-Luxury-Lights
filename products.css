@@ -1,0 +1,341 @@
+/* Products Page Styles */
+:root {
+  --products-gradient: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 152, 219, 0.9));
+  --section-spacing: 6rem;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  --image-radius: 15px;
+  --transition: all 0.3s ease;
+  --badge-radius: 20px;
+}
+
+/* Products Hero Section */
+.products-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('images/products-hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  margin-top: var(--header-height);
+}
+
+.products-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--products-gradient);
+  z-index: 1;
+}
+
+.products-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeInUp 1s ease;
+}
+
+.products-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.products-hero p {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Products Filter Section */
+.products-filter {
+  padding: 2rem;
+  background: var(--white);
+  position: sticky;
+  top: var(--header-height);
+  z-index: 100;
+  box-shadow: var(--card-shadow);
+}
+
+.filter-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: var(--background);
+  color: var(--text);
+  border-radius: var(--image-radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+}
+
+.filter-btn:hover {
+  background: var(--accent);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  color: var(--white);
+}
+
+/* Products Grid Section */
+.products-grid {
+  padding: var(--section-spacing) 2rem;
+  background: var(--background);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.product-card {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--image-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.product-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: var(--white);
+  border-radius: var(--badge-radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card-content {
+  padding: 1.5rem;
+}
+
+.product-card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.product-card-content p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.wishlist-btn,
+.cart-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: var(--background);
+  color: var(--text);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlist-btn:hover,
+.cart-btn:hover {
+  background: var(--accent);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.wishlist-btn.active {
+  background: var(--accent);
+  color: var(--white);
+}
+
+/* Products CTA Section */
+.products-cta {
+  padding: var(--section-spacing) 2rem;
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--accent);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: var(--image-radius);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.cta-button:hover {
+  background: var(--white);
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .product-card img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .product-card-content {
+    padding: 1.25rem;
+  }
+
+  .product-card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  .wishlist-btn,
+  .cart-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-hero {
+    min-height: 40vh;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  .product-meta {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .product-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+} 

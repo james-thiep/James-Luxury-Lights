@@ -3,42 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our premium collection of luxury lighting solutions at James Luxury Lights">
     <title>Products - James Luxury Lights</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">
+                <img src="images/logo.svg" alt="James Luxury Lights Logo">
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="categories.html">Categories</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories/interior-lighting.html">Interior Lighting</a></li>
+                        <li><a href="categories/exterior-lighting.html">Exterior Lighting</a></li>
+                        <li><a href="categories/commercial-lighting.html">Commercial Lighting</a></li>
+                        <li><a href="categories/custom-lighting.html">Custom Lighting</a></li>
+                    </ul>
+                </li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section class="products">
-            <h1>Our Products</h1>
-            <div class="product-list">
-                <div class="product-item">
-                    <h2>Modern Chandelier</h2>
-                    <p>A sleek and modern chandelier perfect for contemporary spaces.</p>
+        <!-- Products Hero Section -->
+        <section class="products-hero">
+            <div class="hero-content">
+                <h1>Our Premium Collection</h1>
+                <p>Discover our exquisite range of luxury lighting solutions</p>
+            </div>
+        </section>
+
+        <!-- Products Filter Section -->
+        <section class="products-filter">
+            <div class="filter-container">
+                <button class="filter-btn active">All Products</button>
+                <button class="filter-btn">Chandeliers</button>
+                <button class="filter-btn">Pendant Lights</button>
+                <button class="filter-btn">Wall Lights</button>
+                <button class="filter-btn">Floor Lamps</button>
+                <button class="filter-btn">Table Lamps</button>
+            </div>
+        </section>
+
+        <!-- Products Grid Section -->
+        <section class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-badge">New</div>
+                <img src="images/chandelier1.webp" alt="Modern Crystal Chandelier">
+                <div class="product-card-content">
+                    <h3>Modern Crystal Chandelier</h3>
+                    <p>A stunning contemporary chandelier featuring premium crystal elements and LED technology.</p>
+                    <div class="product-meta">
+                        <span class="price">$1,299.99</span>
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <h2>Vintage Pendant Light</h2>
-                    <p>Add a touch of vintage charm with our pendant lights.</p>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-badge">Popular</div>
+                <img src="images/pendant1.webp" alt="Vintage Pendant Light">
+                <div class="product-card-content">
+                    <h3>Vintage Pendant Light</h3>
+                    <p>Handcrafted pendant light with brass finish and frosted glass shade.</p>
+                    <div class="product-meta">
+                        <span class="price">$349.99</span>
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <!-- Add more products as needed -->
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="images/wall-light1.webp" alt="Modern Wall Sconce">
+                <div class="product-card-content">
+                    <h3>Modern Wall Sconce</h3>
+                    <p>Sleek wall-mounted light fixture with adjustable arms and dimmable LED.</p>
+                    <div class="product-meta">
+                        <span class="price">$199.99</span>
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="product-badge">Best Seller</div>
+                <img src="images/floor-lamp1.webp" alt="Designer Floor Lamp">
+                <div class="product-card-content">
+                    <h3>Designer Floor Lamp</h3>
+                    <p>Contemporary floor lamp with adjustable height and warm LED lighting.</p>
+                    <div class="product-meta">
+                        <span class="price">$449.99</span>
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <img src="images/table-lamp1.webp" alt="Crystal Table Lamp">
+                <div class="product-card-content">
+                    <h3>Crystal Table Lamp</h3>
+                    <p>Elegant table lamp with crystal base and fabric shade, perfect for bedside or desk.</p>
+                    <div class="product-meta">
+                        <span class="price">$279.99</span>
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="product-badge">Limited</div>
+                <img src="images/chandelier2.webp" alt="Art Deco Chandelier">
+                <div class="product-card-content">
+                    <h3>Art Deco Chandelier</h3>
+                    <p>Inspired by the 1920s, this chandelier features geometric patterns and warm lighting.</p>
+                    <div class="product-meta">
+                        <span class="price">$1,599.99</span>
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products CTA Section -->
+        <section class="products-cta">
+            <div class="cta-content">
+                <h2>Looking for Something Special?</h2>
+                <p>We offer custom lighting solutions tailored to your specific needs and preferences.</p>
+                <a href="contact.html" class="cta-button">Contact Us <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 James Luxury Lights</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>James Luxury Lights is your premier destination for high-end lighting solutions, offering exceptional quality and design since 2014.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Plot 24, Yusuf Lule Road, Nakasero</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@jamesluxurylights.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 James Luxury Lights. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Shipping Policy</a>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

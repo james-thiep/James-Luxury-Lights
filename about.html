@@ -3,32 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about James Luxury Lights - Our story, mission, and commitment to quality lighting solutions">
     <title>About Us - James Luxury Lights</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">
+                <img src="images/logo.svg" alt="James Luxury Lights Logo">
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="categories.html">Categories</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories/interior-lighting.html">Interior Lighting</a></li>
+                        <li><a href="categories/exterior-lighting.html">Exterior Lighting</a></li>
+                        <li><a href="categories/commercial-lighting.html">Commercial Lighting</a></li>
+                        <li><a href="categories/custom-lighting.html">Custom Lighting</a></li>
+                    </ul>
+                </li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section class="about">
-            <h1>About Us</h1>
-            <p>James Luxury Lights has been brightening homes with elegance and style for over a decade. Our passion for design and quality art is reflected in every piece we create.</p>
+        <!-- About Hero Section -->
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <h1>Our Story</h1>
+                <p>Illuminating Lives with Elegance and Innovation</p>
+            </div>
+        </section>
+
+        <!-- About Content Section -->
+        <section class="about-content">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p>James Luxury Lights has been brightening homes with elegance and style for over a decade. Our passion for design and quality craftsmanship is reflected in every piece we create.</p>
+                    <p>Founded in 2014, we've grown from a small boutique lighting store to one of Uganda's leading luxury lighting providers, serving both residential and commercial clients.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/luxuryvilla.webp" alt="Our Showroom">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values Section -->
+        <section class="mission-values">
+            <div class="section-header">
+                <h2>Our Mission & Values</h2>
+                <p>Guiding principles that shape everything we do</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Constantly pushing boundaries in lighting design and technology</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Quality</h3>
+                    <p>Uncompromising commitment to excellence in every detail</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Customer Focus</h3>
+                    <p>Building lasting relationships through exceptional service</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainability</h3>
+                    <p>Eco-friendly solutions for a brighter future</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="section-header">
+                <h2>Meet Our Team</h2>
+                <p>The passionate individuals behind our success</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/client1.jpg" alt="Team Member">
+                    <h3>James Kato</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/client2.jpg" alt="Team Member">
+                    <h3>Sarah Nalwoga</h3>
+                    <p>Design Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/client3.jpg" alt="Team Member">
+                    <h3>David Ssewanyana</h3>
+                    <p>Technical Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements">
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <h3>10+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>500+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>1000+</h3>
+                    <p>Successful Projects</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>50+</h3>
+                    <p>Expert Team Members</p>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 James Luxury Lights</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>James Luxury Lights is your premier destination for high-end lighting solutions, offering exceptional quality and design since 2014.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Street, Kampala</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@jamesluxurylights.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 James Luxury Lights. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Shipping Policy</a>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
